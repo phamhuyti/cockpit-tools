@@ -120,9 +120,18 @@ jobs:
       - name: 💾 Preserve previous legacy latest.json
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ steps.app_version.outputs.VERSION }}
         shell: bash
         run: |
           set -euo pipefail
+
+          # A minimal placeholder manifest is staged first; finalize-legacy-latest
+          # rebuilds the complete latest.json from every platform's assets and
+          # overwrites this before the release is marked latest.
+          write_placeholder() {
+            printf '{"version":"v%s","notes":"","pub_date":"","platforms":{}}\n' "${VERSION}" > legacy-latest.json
+          }
+
           PREVIOUS_TAG="$(
             gh release list \
               --limit 100 \
@@ -130,18 +139,22 @@ jobs:
               --jq "[.[] | select(.isDraft == false and .isPrerelease == false and .tagName != \"${GITHUB_REF_NAME}\")][0].tagName // \"\""
           )"
           if [ -z "${PREVIOUS_TAG}" ]; then
-            echo "No previous published release was found; refusing to stage without a legacy updater manifest."
-            exit 1
+            echo "No previous published release found (first release on this fork); staging a minimal placeholder latest.json."
+            write_placeholder
+          else
+            mkdir -p previous-release
+            if gh release download "${PREVIOUS_TAG}" \
+                --pattern "latest.json" \
+                --dir previous-release \
+                --clobber \
+              && [ -s previous-release/latest.json ]; then
+              cp previous-release/latest.json legacy-latest.json
+              echo "Preserved legacy latest.json from ${PREVIOUS_TAG}"
+            else
+              echo "Previous release ${PREVIOUS_TAG} has no usable latest.json; staging a minimal placeholder."
+              write_placeholder
+            fi
           fi
-
-          mkdir -p previous-release
-          gh release download "${PREVIOUS_TAG}" \
-            --pattern "latest.json" \
-            --dir previous-release \
-            --clobber
-          test -s previous-release/latest.json
-          cp previous-release/latest.json legacy-latest.json
-          echo "Preserved legacy latest.json from ${PREVIOUS_TAG}"
 
       # Publish the release early (with previous complete latest.json) so parallel
       # platform jobs can verify assets via public tag download URLs without
@@ -920,6 +933,9 @@ jobs:
 
   update-homebrew-cask:
     name: 🍺 Update Homebrew Cask
+    # Opt-in: only forks that maintain their own Homebrew tap should run this.
+    # Enable by setting the repository variable ENABLE_HOMEBREW_CASK to "true".
+    if: ${{ vars.ENABLE_HOMEBREW_CASK == 'true' }}
     needs:
       - prepare-release
       - finalize-legacy-latest
