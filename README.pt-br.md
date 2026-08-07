@@ -1,6 +1,6 @@
 # Cockpit Tools
 
-[English](README.en.md)  · Portuguese (BR) · [简体中文](README.md)
+[English](README.en.md)  · Portuguese (BR) · [简体中文](README.md) · [Tiếng Việt](README.vi.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/jlcodes99/cockpit-tools?style=flat&color=gold)](https://github.com/jlcodes99/cockpit-tools)
 [![GitHub downloads](https://img.shields.io/github/downloads/jlcodes99/cockpit-tools/total?style=flat&color=blue)](https://github.com/jlcodes99/cockpit-tools/releases)
