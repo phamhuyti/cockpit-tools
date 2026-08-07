@@ -1,28 +1,27 @@
 # Cockpit Tools
 
-[English](README.en.md) · [Portuguese (BR)](README.pt-br.md) · 简体中文 · [Tiếng Việt](README.vi.md)
+Tiếng Việt · [简体中文](README.zh-CN.md) · [English](README.en.md) · [Portuguese (BR)](README.pt-br.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/jlcodes99/cockpit-tools?style=flat&color=gold)](https://github.com/jlcodes99/cockpit-tools)
 [![GitHub downloads](https://img.shields.io/github/downloads/jlcodes99/cockpit-tools/total?style=flat&color=blue)](https://github.com/jlcodes99/cockpit-tools/releases)
 [![GitHub release](https://img.shields.io/github/v/release/jlcodes99/cockpit-tools?style=flat)](https://github.com/jlcodes99/cockpit-tools/releases)
 [![GitHub issues](https://img.shields.io/github/issues/jlcodes99/cockpit-tools)](https://github.com/jlcodes99/cockpit-tools/issues)
 
-一款**通用的 AI IDE 账号管理工具**，目前支持 **Antigravity IDE**、**Codex**、**GitHub Copilot**、**Windsurf**、**Kiro**、**Cursor**、**Grok CLI**、**CodeBuddy**、**CodeBuddy CN**、**Qoder**、**Trae**、**TRAE SOLO**、**Trae CN**、**TRAE SOLO CN**、**Zed** 和 **ZCode**，并支持多账号多实例并行运行。
+Một **công cụ quản lý tài khoản AI IDE đa năng**, hiện hỗ trợ **Antigravity IDE**, **Codex**, **GitHub Copilot**, **Windsurf**, **Kiro**, **Cursor**, **Grok CLI**, **CodeBuddy**, **CodeBuddy CN**, **Qoder**, **Trae**, **TRAE SOLO**, **Trae CN**, **TRAE SOLO CN**, **Zed** và **ZCode**, cùng với khả năng chạy song song nhiều thực thể (multi-instance).
 
+> Được thiết kế để giúp người dùng quản lý hiệu quả nhiều tài khoản AI IDE, công cụ này hỗ trợ chuyển đổi một chạm, giám sát hạn mức, tác vụ đánh thức và chạy song song nhiều thực thể, giúp bạn tận dụng tối đa tài nguyên từ các tài khoản khác nhau.
 
-> 本工具旨在帮助用户高效管理多个 AI IDE 账号，支持一键切换、配额监控、自动唤醒与应用多开并行运行，助您充分利用不同账号的资源。
+**Tính năng**: Chuyển tài khoản một chạm · Quản lý đa tài khoản · Đa thực thể · Giám sát hạn mức · Tác vụ đánh thức · Tích hợp plugin · Quản lý GitHub Copilot · Quản lý Windsurf · Quản lý Kiro · Quản lý Cursor · Quản lý Grok CLI · Quản lý CodeBuddy · Quản lý CodeBuddy CN · Quản lý Qoder · Quản lý bộ Trae · Quản lý Zed · Quản lý ZCode
 
-**功能**：一键切号 · 多账号管理 · 应用多开 · 配额监控 · 唤醒任务 · 插件联动 · GitHub Copilot 管理 · Windsurf 管理 · Kiro 管理 · Cursor 管理 · Grok CLI 管理 · CodeBuddy 管理 · CodeBuddy CN 管理 · Qoder 管理 · Trae 套件管理 · Zed 管理 · ZCode 管理
-
-**语言**：支持 18 种语言
+**Ngôn ngữ**: Hỗ trợ 18 ngôn ngữ
 
 🇺🇸 English · 🇨🇳 简体中文 · 繁體中文 · 🇯🇵 日本語 · 🇩🇪 Deutsch · 🇪🇸 Español · 🇫🇷 Français · 🇮🇹 Italiano · 🇰🇷 한국어 · 🇧🇷 Português · 🇷🇺 Русский · 🇹🇷 Türkçe · 🇵🇱 Polski · 🇨🇿 Čeština · 🇸🇦 العربية · 🇻🇳 Tiếng Việt · 🇮🇩 Bahasa Indonesia
 
-**官方支持平台**：macOS、Windows、Linux。
+**Nền tảng được hỗ trợ chính thức**: macOS, Windows và Linux.
 
 ---
 
-## 赞助商
+## Nhà tài trợ
 
 <table>
   <tr>
@@ -32,7 +31,7 @@
       </a>
     </td>
     <td>
-      <a href="https://apikey.fun/register?aff=COCKPIT"><strong>APIKEY.FUN</strong></a> 是一家专业的企业级 AI 中转站，致力于为企业和个人开发者提供稳定、高效、低成本的 AI 模型 API 接入服务。平台支持 Claude、OpenAI、Gemini 等主流热门模型，价格低至官方原价的 7%。通过本项目 <a href="https://apikey.fun/register?aff=COCKPIT"><strong>专属链接</strong></a> 注册，还可享受最高 <strong>充值永久 95 折</strong> 专属优惠。
+      <a href="https://apikey.fun/register?aff=COCKPIT"><strong>APIKEY.FUN</strong></a> là một dịch vụ trung chuyển AI cấp doanh nghiệp chuyên nghiệp, tập trung vào việc truy cập API mô hình AI ổn định, hiệu quả và chi phí thấp cho các công ty và nhà phát triển cá nhân. Nó hỗ trợ các mô hình phổ biến như Claude, OpenAI và Gemini, với giá chỉ bằng 7% giá chính thức. Đăng ký qua <a href="https://apikey.fun/register?aff=COCKPIT"><strong>liên kết độc quyền</strong></a> của dự án này để nhận <strong>ưu đãi nạp tiền 5% vĩnh viễn</strong> độc quyền.
     </td>
   </tr>
   <tr>
@@ -42,380 +41,384 @@
       </a>
     </td>
     <td>
-      <a href="https://roxybrowser.cn?code=0326VTDA"><strong>RoxyBrowser（Roxy浏览器）</strong></a> 是面向多账号运营与 AI 自动化场景的指纹浏览器，支持独立浏览器指纹环境、Cookie / 存储隔离、Roxy 原生住宅 IP、团队协作与 API / MCP 自动化能力，适合需要管理 AI 账号矩阵、降低账号关联风险、提升长期使用稳定性的用户。通过 Cockpit <a href="https://roxybrowser.cn?code=0326VTDA"><strong>邀请链接</strong></a> 注册或购买，可享受 10% 粉丝折扣。
+      <a href="https://roxybrowser.cn?code=0326VTDA"><strong>RoxyBrowser</strong></a> là một trình duyệt chống phát hiện (anti-detect) dành cho vận hành đa tài khoản và tự động hóa AI, hỗ trợ môi trường vân tay trình duyệt cô lập, cô lập Cookie / bộ nhớ, IP dân cư gốc của Roxy, cộng tác nhóm và tự động hóa API / MCP. Nó giúp người dùng quản lý ma trận tài khoản AI, giảm rủi ro liên kết tài khoản và cải thiện tính ổn định lâu dài. Đăng ký hoặc mua qua <a href="https://roxybrowser.cn?code=0326VTDA"><strong>liên kết mời</strong></a> của Cockpit để nhận ưu đãi 10% cho người hâm mộ.
     </td>
   </tr>
 </table>
 
 ---
 
-## 功能概览
+## Tổng quan tính năng
 
-### 1. 仪表盘 (Dashboard)
+### 1. Bảng điều khiển (Dashboard)
 
-全新的可视化仪表盘，为您提供一站式的状态概览：
+Một bảng điều khiển trực quan hoàn toàn mới cung cấp cái nhìn tổng quan trạng thái tại một nơi:
 
-- **十六平台支持**：同时展示 Antigravity IDE、Codex、GitHub Copilot、Windsurf、Kiro、Cursor、Grok CLI、CodeBuddy、CodeBuddy CN、Qoder、Trae、TRAE SOLO、Trae CN、TRAE SOLO CN、Zed 与 ZCode 的账号状态
-- **配额监控**：实时查看各模型剩余配额、重置时间
-- **快捷操作**：一键刷新、一键唤醒
-- **可视化进度**：直观的进度条展示配额消耗情况
+- **Hỗ trợ mười sáu nền tảng**: Đồng thời hiển thị trạng thái tài khoản của Antigravity IDE, Codex, GitHub Copilot, Windsurf, Kiro, Cursor, Grok CLI, CodeBuddy, CodeBuddy CN, Qoder, Trae, TRAE SOLO, Trae CN, TRAE SOLO CN, Zed và ZCode
+- **Giám sát hạn mức**: Xem theo thời gian thực hạn mức còn lại và thời gian đặt lại của từng mô hình
+- **Thao tác nhanh**: Làm mới một chạm, đánh thức một chạm
+- **Tiến trình trực quan**: Thanh tiến trình trực quan hiển thị mức tiêu thụ hạn mức
 
-> ![Dashboard Overview](docs/images/dashboard_overview.png)
+> ![Tổng quan Dashboard](docs/images/dashboard_overview.png)
 
-### 2. Antigravity IDE 账号管理
+### 2. Quản lý tài khoản Antigravity IDE
 
-- **一键切号**：一键切换当前使用的账号，无需手动登录登出
-- **多种导入**：支持 OAuth 授权、Refresh Token、插件同步
-- **唤醒任务**：定时唤醒 AI 模型，提前触发配额重置周期
+- **Chuyển đổi một chạm**: Chuyển tài khoản đang hoạt động ngay lập tức mà không cần đăng nhập/đăng xuất thủ công
+- **Nhiều phương thức nhập**: OAuth, Refresh Token, Đồng bộ plugin
+- **Tác vụ đánh thức**: Lên lịch đánh thức mô hình AI để kích hoạt chu kỳ đặt lại hạn mức trước
 
-> ![Antigravity IDE Accounts](docs/images/antigravity_list.png)
+> ![Tài khoản Antigravity IDE](docs/images/antigravity_list.png)
 >
-> *(唤醒任务)*
-> ![Wakeup Tasks](docs/images/wakeup_detail.png)
+> *(Tác vụ đánh thức)*
+> ![Tác vụ đánh thức](docs/images/wakeup_detail.png)
 
-#### 2.1 Antigravity IDE 应用多开
+#### 2.1 Đa thực thể Antigravity IDE
 
-支持同一平台多账号多实例并行运行。比如同时打开两个 Antigravity IDE，分别绑定不同账号，分别处理不同项目，互不影响。
+Chạy song song nhiều thực thể Antigravity IDE với các tài khoản khác nhau. Ví dụ, mở hai thực thể Antigravity IDE, gắn các tài khoản khác nhau và xử lý các dự án khác nhau một cách độc lập.
 
-- **独立账号**：每个实例绑定不同账号并独立运行
-- **并行项目**：多实例同时处理不同任务/项目
-- **参数隔离**：支持自定义实例目录与启动参数
+- **Tài khoản cô lập**: Mỗi thực thể gắn một tài khoản khác nhau và chạy độc lập
+- **Dự án song song**: Chạy nhiều tác vụ/dự án cùng lúc
+- **Cô lập tham số**: Tùy chỉnh thư mục thực thể và tham số khởi chạy
 
-> ![Antigravity IDE Instances](docs/images/antigravity_instances.png)
+> ![Thực thể Antigravity IDE](docs/images/antigravity_instances.png)
 
-### 3. Codex 账号管理
+### 3. Quản lý tài khoản Codex
 
-- **专属支持**：专为 Codex 优化的账号管理体验
-- **配额展示**：清晰展示 Hourly 和 Weekly 配额状态
-- **计划识别**：自动识别账号 Plan 类型 (Basic, Plus, Team 等)
-- **API 服务**：本地 Codex API 服务由内置 CLIProxyAPI sidecar 驱动，Cockpit Tools 负责账号同步、配置投影、状态与用量统计；Base URL、API Key 与用户操作方式保持不变。
+- **Hỗ trợ chuyên biệt**: Trải nghiệm quản lý tài khoản được tối ưu cho Codex
+- **Hiển thị hạn mức**: Hiển thị rõ ràng trạng thái hạn mức theo Giờ và theo Tuần
+- **Nhận diện gói**: Tự động nhận diện loại Gói của tài khoản (Basic, Plus, Team, v.v.)
+- **Dịch vụ API**: Dịch vụ Codex API cục bộ được cung cấp bởi sidecar CLIProxyAPI đi kèm. Cockpit Tools xử lý việc đồng bộ tài khoản, chiếu cấu hình, trạng thái và thống kê sử dụng trong khi vẫn giữ nguyên Base URL, khóa API và quy trình làm việc của người dùng.
 
-> ![Codex Accounts](docs/images/codex_list.png)
+> ![Tài khoản Codex](docs/images/codex_list.png)
 
-#### 3.1 Codex 应用多开
+#### 3.1 Đa thực thể Codex
 
-Codex 同样支持多账号多实例并行运行。比如同时打开两个 Codex，分别绑定不同账号，分别处理不同项目，互不影响。
+Codex cũng hỗ trợ sử dụng đa thực thể song song. Ví dụ, mở hai thực thể Codex, gắn các tài khoản khác nhau và xử lý các dự án khác nhau một cách độc lập.
 
-- **独立账号**：每个实例绑定不同账号并独立运行
-- **并行项目**：多实例同时处理不同任务/项目
-- **参数隔离**：支持自定义实例目录与启动参数
+- **Tài khoản cô lập**: Mỗi thực thể gắn một tài khoản khác nhau và chạy độc lập
+- **Dự án song song**: Chạy nhiều tác vụ/dự án cùng lúc
+- **Cô lập tham số**: Tùy chỉnh thư mục thực thể và tham số khởi chạy
 
-> ![Codex Instances](docs/images/codex_instances.png)
+> ![Thực thể Codex](docs/images/codex_instances.png)
 
-### 4. GitHub Copilot 账号管理
+### 4. Quản lý tài khoản GitHub Copilot
 
-- **账号导入**：支持 OAuth 授权、Token/JSON 导入
-- **配额视图**：展示 Inline Suggestions / Chat messages 使用情况与重置时间
-- **订阅识别**：自动识别 Free / Individual / Pro / Business / Enterprise 等计划类型
-- **批量管理**：支持标签与批量操作
+- **Nhập tài khoản**: OAuth, nhập Token/JSON
+- **Xem hạn mức**: Mức sử dụng Inline Suggestions / Chat messages và thời gian đặt lại
+- **Nhận diện gói**: Tự động phát hiện các bậc Free / Individual / Pro / Business / Enterprise
+- **Thao tác hàng loạt**: Thẻ (tag) và các hành động hàng loạt
 
-#### 4.1 GitHub Copilot 应用多开
+#### 4.1 Đa thực thể GitHub Copilot
 
-基于 VS Code 的 Copilot 多实例管理，支持独立配置与生命周期控制。
+Quản lý các thực thể VS Code Copilot với hồ sơ cô lập và điều khiển vòng đời.
 
-- **独立配置**：每个实例拥有独立的用户目录
-- **快速启停**：一键启动/停止/强制关闭实例
-- **窗口管理**：支持打开实例窗口与批量关闭
+- **Hồ sơ cô lập**: Mỗi thực thể sử dụng thư mục dữ liệu người dùng riêng
+- **Vòng đời nhanh**: Khởi động/dừng/buộc dừng thực thể
+- **Điều khiển cửa sổ**: Mở cửa sổ thực thể và đóng tất cả thực thể
 
-### 5. Windsurf 账号管理
+### 5. Quản lý tài khoản Windsurf
 
-- **账号导入**：支持 OAuth 授权、Token/JSON 导入与本地导入
-- **配额视图**：展示 Plan、User Prompt credits、Add-on prompt credits 与周期信息
-- **批量管理**：支持标签与批量操作
-- **切号注入**：支持切号后注入并启动 Windsurf
+- **Nhập tài khoản**: OAuth, nhập Token/JSON và nhập cục bộ
+- **Xem hạn mức**: Hiển thị Gói, tín dụng User Prompt, tín dụng Add-on prompt và thông tin chu kỳ
+- **Thao tác hàng loạt**: Thẻ (tag) và các hành động hàng loạt
+- **Tiêm khi chuyển đổi**: Hỗ trợ tiêm và khởi chạy Windsurf sau khi chuyển tài khoản
 
-#### 5.1 Windsurf 应用多开
+#### 5.1 Đa thực thể Windsurf
 
-支持 Windsurf 多实例管理，支持独立配置与生命周期控制。
+Quản lý các thực thể Windsurf với hồ sơ cô lập và điều khiển vòng đời.
 
-- **独立配置**：每个实例拥有独立的用户目录
-- **快速启停**：一键启动/停止/强制关闭实例
-- **窗口管理**：支持打开实例窗口与批量关闭
+- **Hồ sơ cô lập**: Mỗi thực thể sử dụng thư mục dữ liệu người dùng riêng
+- **Vòng đời nhanh**: Khởi động/dừng/buộc dừng thực thể
+- **Điều khiển cửa sổ**: Mở cửa sổ thực thể và đóng tất cả thực thể
 
-### 6. Kiro 账号管理
+### 6. Quản lý tài khoản Kiro
 
-- **账号导入**：支持 OAuth 授权、Token/JSON 导入与本地导入
-- **配额视图**：展示 Plan、User Prompt credits、Add-on prompt credits 与周期信息
-- **批量管理**：支持标签与批量操作
-- **切号注入**：支持切号后注入并启动 Kiro
+- **Nhập tài khoản**: OAuth, nhập Token/JSON và nhập cục bộ
+- **Xem hạn mức**: Hiển thị Gói, tín dụng User Prompt, tín dụng Add-on prompt và thông tin chu kỳ
+- **Thao tác hàng loạt**: Thẻ (tag) và các hành động hàng loạt
+- **Tiêm khi chuyển đổi**: Hỗ trợ tiêm và khởi chạy Kiro sau khi chuyển tài khoản
 
-#### 6.1 Kiro 应用多开
+#### 6.1 Đa thực thể Kiro
 
-支持 Kiro 多实例管理，支持独立配置与生命周期控制。
+Quản lý các thực thể Kiro với hồ sơ cô lập và điều khiển vòng đời.
 
-- **独立配置**：每个实例拥有独立的用户目录
-- **快速启停**：一键启动/停止/强制关闭实例
-- **窗口管理**：支持打开实例窗口与批量关闭
+- **Hồ sơ cô lập**: Mỗi thực thể sử dụng thư mục dữ liệu người dùng riêng
+- **Vòng đời nhanh**: Khởi động/dừng/buộc dừng thực thể
+- **Điều khiển cửa sổ**: Mở cửa sổ thực thể và đóng tất cả thực thể
 
-### 7. Cursor 账号管理
+### 7. Quản lý tài khoản Cursor
 
-- **账号导入**：支持 OAuth 授权、Token/JSON 导入与本地导入
-- **配额视图**：展示 Total Usage、Auto + Composer、API Usage、On-Demand 与周期信息
-- **批量管理**：支持标签与批量操作
-- **切号注入**：支持切号后注入并启动 Cursor
+- **Nhập tài khoản**: OAuth, nhập Token/JSON và nhập cục bộ
+- **Xem hạn mức**: Hiển thị Total Usage, Auto + Composer, API Usage, On-Demand và thông tin chu kỳ
+- **Thao tác hàng loạt**: Thẻ (tag) và các hành động hàng loạt
+- **Tiêm khi chuyển đổi**: Hỗ trợ tiêm và khởi chạy Cursor sau khi chuyển tài khoản
 
-#### 7.1 Cursor 应用多开
+#### 7.1 Đa thực thể Cursor
 
-支持 Cursor 多实例管理，支持独立配置与生命周期控制。
+Quản lý các thực thể Cursor với hồ sơ cô lập và điều khiển vòng đời.
 
-- **独立配置**：每个实例拥有独立的用户目录
-- **快速启停**：一键启动/停止/强制关闭实例
-- **窗口管理**：支持打开实例窗口与批量关闭
+- **Hồ sơ cô lập**: Mỗi thực thể sử dụng thư mục dữ liệu người dùng riêng
+- **Vòng đời nhanh**: Khởi động/dừng/buộc dừng thực thể
+- **Điều khiển cửa sổ**: Mở cửa sổ thực thể và đóng tất cả thực thể
 
 
-### 8. Grok CLI 账号管理
+### 8. Quản lý tài khoản Grok CLI
 
-- **OAuth 授权**：支持 xAI 官方 OIDC device flow，在浏览器完成验证后自动保存账号
-- **API Key 与第三方接口**：支持官方 xAI API Key，也支持配置 OpenAI 兼容的第三方 `Base URL` 与模型 ID；配置写入账号专属 `config.toml`，密钥只在启动对应 CLI 进程时通过环境变量注入
-- **导入与脱敏导出**：可从默认 `~/.grok/auth.json` 或指定 JSON 导入官方凭据；账号页导出及通用账号备份均不含 access token/refresh token，不能用于恢复登录，迁移时需单独导入官方 `auth.json`
-- **真实切号**：将选中账号按 Grok CLI 官方 registry 格式写回默认 `~/.grok/auth.json`，并保留文件中其他 registry scope
-- **配额与套餐**：查询官方 billing/user/subscriptions 接口，展示周期、用量、产品配额和套餐原始值，并记录 Grok Code 访问能力
-- **Token 维护**：支持 access token 自动刷新、refresh token rotation 与配额预警
+- **Ủy quyền OAuth**: Hỗ trợ luồng thiết bị OIDC chính thức của xAI và lưu tài khoản sau khi hoàn tất xác minh trên trình duyệt
+- **Khóa API và điểm cuối bên thứ ba**: Hỗ trợ khóa API xAI chính thức cùng với `Base URL` và ID mô hình của bên thứ ba tương thích OpenAI; cấu hình được ghi vào `config.toml` riêng cho từng tài khoản, còn khóa chỉ được tiêm vào tiến trình CLI tương ứng khi khởi chạy
+- **Nhập và xuất đã ẩn thông tin nhạy cảm**: Nhập thông tin xác thực chính thức từ `~/.grok/auth.json` mặc định hoặc JSON được cung cấp; bản xuất từ trang tài khoản và bản sao lưu tài khoản chung bỏ qua access/refresh token, không thể khôi phục đăng nhập và yêu cầu nhập riêng `auth.json` chính thức khi di chuyển
+- **Chuyển tài khoản thực sự**: Ghi tài khoản đã chọn vào `~/.grok/auth.json` mặc định theo định dạng registry chính thức của Grok CLI trong khi vẫn giữ nguyên các phạm vi registry khác trong tệp
+- **Hạn mức và gói**: Truy vấn các điểm cuối billing/user/subscriptions chính thức, hiển thị chu kỳ, mức sử dụng, hạn mức sản phẩm và giá trị gói gốc, đồng thời ghi lại quyền truy cập Grok Code
+- **Bảo trì Token**: Hỗ trợ tự động làm mới access-token, xoay vòng refresh-token và cảnh báo hạn mức
 
-#### 8.1 Grok CLI 多实例
+#### 8.1 Đa thực thể Grok CLI
 
-Grok CLI 默认实例通常直接沿用官方 `~/.grok` 目录，启动时不设置 `GROK_HOME`；受管实例使用独立目录。API Key 账号（含第三方接口）为避免被官方 OAuth session 抢占凭据优先级，也始终通过账号专属 `GROK_HOME` 启动。
+Thực thể Grok CLI mặc định thường sử dụng trực tiếp thư mục `~/.grok` chính thức và khởi động mà không thiết lập `GROK_HOME`; các thực thể được quản lý sử dụng thư mục riêng biệt. Các tài khoản dùng khóa API, bao gồm cả điểm cuối bên thứ ba, luôn khởi chạy với `GROK_HOME` riêng của tài khoản để phiên OAuth chính thức không thể chiếm ưu tiên thông tin xác thực.
 
-- **账号绑定**：默认实例可跟随当前账号，每个受管实例可绑定不同账号
-- **运行隔离**：受管实例的 `auth.json`、`config.toml`、工作目录与启动参数互相独立
-- **终端启停**：支持生成或执行终端启动命令、停止实例与批量关闭
-- **目录保护**：非默认实例目录仅允许位于默认受管根目录；删除时移入回收站，历史配置中的外部目录只解除登记且不会被写入或删除
+- **Gắn tài khoản**: Thực thể mặc định có thể theo tài khoản hiện tại, còn mỗi thực thể được quản lý có thể gắn một tài khoản khác nhau
+- **Cô lập thời gian chạy**: Các thực thể được quản lý giữ riêng `auth.json`, `config.toml`, thư mục làm việc và tham số khởi chạy
+- **Vòng đời terminal**: Tạo hoặc thực thi lệnh khởi chạy terminal, dừng thực thể và đóng tất cả thực thể
+- **Bảo vệ thư mục**: Các thực thể không mặc định bị giới hạn trong thư mục gốc được quản lý mặc định và được chuyển vào thùng rác khi xóa; các đường dẫn bên ngoài từ cấu hình cũ chỉ được hủy đăng ký và không bao giờ bị ghi đè hoặc xóa
 
-### 9. CodeBuddy 账号管理
+### 9. Quản lý tài khoản CodeBuddy
 
-- **账号导入**：支持 OAuth 授权、Token/JSON 导入
-- **配额视图**：支持配额查询、周期信息与加量包展示
-- **批量管理**：支持标签与批量操作
-- **切号注入**：支持切号后注入并启动 CodeBuddy
+- **Nhập tài khoản**: OAuth và nhập Token/JSON
+- **Xem hạn mức**: Truy vấn hạn mức, chi tiết chu kỳ và hiển thị tín dụng bổ sung
+- **Thao tác hàng loạt**: Thẻ (tag) và các hành động hàng loạt
+- **Tiêm khi chuyển đổi**: Hỗ trợ tiêm và khởi chạy CodeBuddy sau khi chuyển tài khoản
 
-#### 8.1 CodeBuddy 应用多开
+#### 9.1 Đa thực thể CodeBuddy
 
-支持 CodeBuddy 多实例管理，支持独立配置与生命周期控制。
+Quản lý các thực thể CodeBuddy với hồ sơ cô lập và điều khiển vòng đời.
 
-- **独立配置**：每个实例拥有独立的用户目录
-- **快速启停**：一键启动/停止/强制关闭实例
-- **窗口管理**：支持打开实例窗口与批量关闭
+- **Hồ sơ cô lập**: Mỗi thực thể sử dụng thư mục dữ liệu người dùng riêng
+- **Vòng đời nhanh**: Khởi động/dừng/buộc dừng thực thể
+- **Điều khiển cửa sổ**: Mở cửa sổ thực thể và đóng tất cả thực thể
 
-### 10. CodeBuddy CN 账号管理
+### 10. Quản lý tài khoản CodeBuddy CN
 
-- **账号导入**：支持 OAuth 授权、Token/JSON 导入与本机客户端导入
-- **配额视图**：展示套餐与用量状态，并支持跳转官方网页查看配额详情
-- **批量管理**：支持标签与批量操作
-- **切号注入**：支持切号后按客户端本地认证存储规则注入并启动 CodeBuddy CN
+- **Nhập tài khoản**: hỗ trợ OAuth, nhập Token/JSON và nhập từ client cục bộ
+- **Xem hạn mức**: hiển thị gói và trạng thái sử dụng, với lối tắt mở thông tin hạn mức chi tiết trên trang web chính thức
+- **Thao tác hàng loạt**: hỗ trợ thẻ (tag) và các hành động hàng loạt
+- **Tiêm khi chuyển đổi**: hỗ trợ ghi lại trạng thái xác thực cục bộ và khởi chạy CodeBuddy CN sau khi chuyển tài khoản
 
-#### 9.1 CodeBuddy CN 应用多开
+#### 10.1 Đa thực thể CodeBuddy CN
 
-支持 CodeBuddy CN 多实例管理，支持独立配置与生命周期控制。
+Quản lý các thực thể CodeBuddy CN với hồ sơ cô lập và điều khiển vòng đời.
 
-- **独立配置**：每个实例拥有独立的用户目录
-- **快速启停**：一键启动/停止/强制关闭实例
-- **窗口管理**：支持打开实例窗口与批量关闭
+- **Hồ sơ cô lập**: mỗi thực thể sử dụng thư mục dữ liệu người dùng riêng
+- **Vòng đời nhanh**: khởi động/dừng/buộc dừng thực thể
+- **Điều khiển cửa sổ**: mở cửa sổ thực thể và đóng tất cả thực thể
 
-### 11. Qoder 账号管理
+### 11. Quản lý tài khoản Qoder
 
-- **账号导入**：支持本机导入与 JSON 导入
-- **配额视图**：展示 Credits 使用、剩余额度与套餐原始值
-- **批量管理**：支持标签、筛选、导出与批量删除/刷新
-- **切号注入**：支持切号后注入并启动 Qoder
+- **Nhập tài khoản**: hỗ trợ nhập cục bộ và nhập JSON
+- **Xem hạn mức**: hiển thị mức sử dụng Credits, tín dụng còn lại và giá trị gói gốc
+- **Thao tác hàng loạt**: hỗ trợ thẻ (tag), bộ lọc, xuất và xóa/làm mới hàng loạt
+- **Tiêm khi chuyển đổi**: hỗ trợ tiêm và khởi chạy Qoder sau khi chuyển tài khoản
 
-#### 10.1 Qoder 应用多开
+#### 11.1 Đa thực thể Qoder
 
-支持 Qoder 多实例管理，支持独立配置与生命周期控制。
+Quản lý các thực thể Qoder với hồ sơ cô lập và điều khiển vòng đời.
 
-- **独立配置**：每个实例拥有独立的用户目录
-- **快速启停**：一键启动/停止/强制关闭实例
-- **窗口管理**：支持打开实例窗口与批量关闭
+- **Hồ sơ cô lập**: mỗi thực thể sử dụng thư mục dữ liệu người dùng riêng
+- **Vòng đời nhanh**: khởi động/dừng/buộc dừng thực thể
+- **Điều khiển cửa sổ**: mở cửa sổ thực thể và đóng tất cả thực thể
 
-### 12. Trae 账号管理
+### 12. Quản lý tài khoản Trae
 
-- **账号导入**：支持本机导入与 JSON 导入
-- **配额视图**：展示套餐原始值、美元消耗/总额度与重置时间
-- **批量管理**：支持标签、筛选、导出与批量删除/刷新
-- **Trae 套件**：支持 Trae、TRAE SOLO、Trae CN、TRAE SOLO CN 默认客户端的本机导入与切号注入，默认归入 Trae 分组
-- **切号注入**：支持切号后按各客户端真实落盘规则写回并启动目标客户端
+- **Nhập tài khoản**: hỗ trợ nhập cục bộ và nhập JSON
+- **Xem hạn mức**: hiển thị giá trị gói gốc, số USD đã chi/tổng ngân sách và thời gian đặt lại
+- **Thao tác hàng loạt**: hỗ trợ thẻ (tag), bộ lọc, xuất và xóa/làm mới hàng loạt
+- **Bộ Trae**: hỗ trợ nhập cục bộ và tiêm khi chuyển đổi cho các client mặc định của Trae, TRAE SOLO, Trae CN và TRAE SOLO CN; theo mặc định chúng được nhóm dưới Trae
+- **Tiêm khi chuyển đổi**: hỗ trợ ghi lại trạng thái xác thực cục bộ theo quy tắc lưu trữ thực tế trên đĩa của từng client và khởi chạy client mục tiêu
 
-#### 11.1 Trae 应用多开
+#### 12.1 Đa thực thể Trae
 
-支持原 Trae 客户端多实例管理，支持独立配置与生命周期控制。
+Quản lý các thực thể client Trae gốc với hồ sơ cô lập và điều khiển vòng đời.
 
-- **独立配置**：每个实例拥有独立的用户目录
-- **快速启停**：一键启动/停止/强制关闭实例
-- **窗口管理**：支持打开实例窗口与批量关闭
+- **Hồ sơ cô lập**: mỗi thực thể sử dụng thư mục dữ liệu người dùng riêng
+- **Vòng đời nhanh**: khởi động/dừng/buộc dừng thực thể
+- **Điều khiển cửa sổ**: mở cửa sổ thực thể và đóng tất cả thực thể
 
-### 13. Zed 账号管理
+### 13. Quản lý tài khoản Zed
 
-- **账号导入**：支持官方 OAuth 授权、JSON 导入与本机当前登录状态导入
-- **配额视图**：展示订阅状态、Edit Predictions、Token Spend、Spend Limit 与账期结束时间
-- **批量管理**：支持标签、筛选、导出与批量删除/刷新
-- **切号注入**：支持切号后按 Zed 客户端真实落盘规则应用账号，并可按需重启官方客户端
+- **Nhập tài khoản**: Hỗ trợ đăng nhập OAuth chính thức, nhập JSON và nhập trạng thái đăng nhập cục bộ hiện tại
+- **Xem mức sử dụng**: Hiển thị trạng thái đăng ký, Edit Predictions, Token Spend, Spend Limit và ngày kết thúc kỳ thanh toán
+- **Thao tác hàng loạt**: Hỗ trợ thẻ (tag), bộ lọc, xuất và xóa/làm mới hàng loạt
+- **Tiêm khi chuyển đổi**: Áp dụng tài khoản đã chọn trở lại client Zed chính thức theo quy tắc lưu trữ cục bộ thực tế của client và khởi động lại client khi cần
 
-### 14. ZCode 账号管理
+### 14. Quản lý tài khoản ZCode
 
-- **官方登录**：关闭 ZCode 后，可在 Cockpit 内置授权窗口完成 Z.ai 或 BigModel OAuth；窗口直接拦截 `zcode://` 官方回调并保存账号
-- **导入导出**：支持读取本机 `~/.zcode/v2/credentials.json` 加密凭据、JSON 导入导出与账号备份
-- **配额视图**：查询订阅套餐与按模型拆分的额度，并保留套餐原始值
-- **批量管理**：支持标签、搜索、套餐筛选、导出与批量删除/刷新
-- **真实切号**：按 ZCode 官方凭据格式加密并回写默认客户端登录数据
+- **Đăng nhập chính thức**: Khi ZCode đã đóng, hoàn tất OAuth Z.ai hoặc BigModel trong cửa sổ ủy quyền tích hợp của Cockpit; nó bắt callback `zcode://` chính thức trực tiếp và lưu tài khoản
+- **Nhập và xuất**: Đọc thông tin xác thực cục bộ được mã hóa từ `~/.zcode/v2/credentials.json`, nhập hoặc xuất JSON và sao lưu tài khoản
+- **Xem hạn mức**: Truy vấn các gói đăng ký và hạn mức theo từng mô hình trong khi giữ nguyên giá trị gói gốc
+- **Thao tác hàng loạt**: Thẻ (tag), tìm kiếm, bộ lọc gói, xuất và xóa/làm mới hàng loạt
+- **Chuyển tài khoản thực sự**: Mã hóa và ghi tài khoản đã chọn trở lại theo định dạng thông tin xác thực chính thức của ZCode
 
-#### 13.1 ZCode 应用多开
+#### 14.1 Đa thực thể ZCode
 
-支持 ZCode 多实例管理，每个受管实例使用独立的 Electron 用户数据、会话数据和 ZCode 数据目录。
+Quản lý các thực thể ZCode với thư mục dữ liệu người dùng Electron, dữ liệu phiên và dữ liệu ZCode riêng biệt.
 
-- **账号绑定**：每个实例可绑定不同账号，也可跟随当前账号
-- **独立运行**：实例凭据和业务数据互相隔离
-- **生命周期管理**：支持启动、停止、聚焦与批量关闭实例
+- **Gắn tài khoản**: Gắn một tài khoản khác nhau cho mỗi thực thể hoặc theo tài khoản hiện tại
+- **Thời gian chạy cô lập**: Thông tin xác thực của thực thể và dữ liệu ứng dụng được giữ riêng biệt
+- **Điều khiển vòng đời**: Khởi động, dừng, tập trung và đóng tất cả thực thể được quản lý
 
-### 15. 通用设置
+### 15. Cài đặt chung
 
-- **个性化设置**：主题切换、语言设置、自动刷新间隔
-- **平台配置**：统一管理 Grok CLI / CodeBuddy CN / Qoder / Trae 套件 / Zed / ZCode 等平台配置与配额预警
+- **Cài đặt cá nhân hóa**: Chuyển đổi giao diện (theme), cài đặt ngôn ngữ, khoảng thời gian tự động làm mới
+- **Điều khiển nền tảng**: Cài đặt tập trung nền tảng và cảnh báo hạn mức cho Grok CLI/CodeBuddy CN/Qoder/bộ Trae/Zed/ZCode
 
-> ![Settings](docs/images/settings_page.png)
+> ![Cài đặt](docs/images/settings_page.png)
 
 ---
 
-## 安全性与隐私（简明版）
+## Bảo mật & Quyền riêng tư (giải thích đơn giản)
 
-下面是最关心的几个问题，尽量用直白语言说明：
+Đây là những câu hỏi bảo mật phổ biến nhất được trả lời trực tiếp:
 
-- **这是本地桌面工具**：不需要单独注册平台账号，也不依赖项目自建云端来存你的账号列表。
-- **数据主要保存在本机**：
-  - `~/.antigravity_cockpit`：Antigravity IDE 账号、配置、WebSocket 状态等
-  - `~/.codex`：Codex 官方当前登录 `auth.json`
-  - `~/.grok`：Grok CLI 官方默认实例与当前登录 `auth.json`
-  - `~/.zcode/v2`：ZCode 官方当前登录加密凭据与配额缓存
-  - 系统本地应用数据目录下 `com.antigravity.cockpit-tools`：Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Grok CLI / CodeBuddy / CodeBuddy CN / Qoder / Trae 套件 / Zed / ZCode 多账号数据等；Grok CLI 的账号详情、受管 profile 与实例配置也保存在此
-- **Grok CLI 凭据不加密**：access token/refresh token 以明文 JSON 保存在本机，主要依赖操作系统账号隔离与本地文件权限保护；Unix 系统上凭据目录设为 `0700`、凭据文件设为 `0600`。脱敏导出不包含 token，不能作为登录备份
-- **WebSocket 默认仅本机访问**：监听 `127.0.0.1`，默认端口 `19528`，可在设置中关闭或改端口。
-- **什么时候会联网**：OAuth 登录、Token 刷新、配额查询、版本更新检查等官方接口请求。
-- **macOS 隐私权限弹窗说明**：在 Cockpit Tools 中启动 Codex/agent 后，如果 agent 执行的 shell 命令访问桌面、文稿、下载、照片等受保护目录，macOS 可能会把权限请求显示为“Cockpit Tools 想要访问……”。这是因为这些命令是 Cockpit Tools 启动的子进程，系统会把权限归因到宿主应用；这不等同于 Cockpit Tools 主程序主动扫描这些目录。是否允许取决于你是否信任当前 agent 任务和它将要执行的命令；不确定时可以选择拒绝，或先把项目放在普通工作目录中运行。
-- **实用安全建议**：
-  1. 不使用插件联动时，可关闭 WebSocket 服务。
-  2. 不要把用户目录直接打包分享；备份前注意脱敏 token 文件。
-  3. 在公共或共用电脑上，使用后删除账号并退出应用。
+- **Đây là công cụ máy tính để bàn cục bộ**: nó không yêu cầu một tài khoản đám mây riêng cho dự án này, và không dựa vào bất kỳ kho lưu trữ tài khoản đám mây nào do dự án lưu trữ.
+- **Dữ liệu chủ yếu được lưu trên máy của bạn**:
+  - `~/.antigravity_cockpit`: tài khoản Antigravity IDE, cấu hình, trạng thái WebSocket, v.v.
+  - `~/.codex`: `auth.json` đăng nhập hiện tại của Codex chính thức
+  - `~/.grok`: thực thể mặc định của Grok CLI chính thức và `auth.json` đăng nhập hiện tại
+  - `~/.zcode/v2`: thông tin xác thực được mã hóa của ZCode cho đăng nhập chính thức hiện tại và bộ nhớ đệm hạn mức
+  - thư mục dữ liệu ứng dụng cục bộ dưới `com.antigravity.cockpit-tools`: dữ liệu đa tài khoản của Codex / GitHub Copilot / Windsurf / Kiro / Cursor / Grok CLI / CodeBuddy / CodeBuddy CN / Qoder / bộ Trae / Zed / ZCode, v.v.; chi tiết tài khoản Grok CLI, hồ sơ được quản lý và cấu hình thực thể cũng được lưu tại đây
+- **Thông tin xác thực Grok CLI không được mã hóa**: access và refresh token được lưu cục bộ dưới dạng JSON văn bản thuần và chủ yếu dựa vào việc cô lập tài khoản của hệ điều hành và quyền tệp cục bộ. Trên hệ thống Unix, thư mục thông tin xác thực được đặt thành `0700` và tệp thông tin xác thực thành `0600`. Bản xuất đã ẩn thông tin nhạy cảm không chứa token và không thể dùng làm bản sao lưu đăng nhập.
+- **WebSocket mặc định chỉ chạy cục bộ**: gắn với `127.0.0.1`, cổng mặc định `19528`; bạn có thể tắt hoặc thay đổi cổng trong Cài đặt.
+- **Khi nào xảy ra truy cập mạng**: đăng nhập OAuth, làm mới token, lấy hạn mức, kiểm tra cập nhật và các yêu cầu API chính thức khác.
+- **Cửa sổ yêu cầu quyền riêng tư trên macOS**: sau khi bạn khởi động Codex/agent từ Cockpit Tools, nếu một lệnh shell do agent chạy truy cập các thư mục được bảo vệ như Desktop, Documents, Downloads hoặc Photos, macOS có thể hiển thị yêu cầu dưới dạng "Cockpit Tools would like to access...". Điều này xảy ra vì những lệnh đó là tiến trình con do Cockpit Tools khởi chạy, nên macOS quy yêu cầu cho ứng dụng chủ; điều đó tự thân không có nghĩa là tiến trình chính của Cockpit Tools đang chủ động quét các thư mục đó. Chỉ cấp quyền khi bạn tin tưởng tác vụ agent hiện tại và các lệnh mà nó sẽ chạy. Nếu không chắc chắn, hãy từ chối cửa sổ hoặc chạy dự án từ một thư mục làm việc thông thường trước.
+- **Mẹo an toàn thực tế**:
+  1. Nếu bạn không cần tích hợp plugin, hãy tắt WebSocket.
+  2. Không chia sẻ trực tiếp toàn bộ thư mục người dùng của bạn; hãy ẩn các tệp token trước khi sao lưu/chia sẻ.
+  3. Trên máy tính dùng chung/công cộng, hãy xóa tài khoản và thoát ứng dụng sau khi sử dụng.
 
-## 设置项说明（小白版）
+## Hướng dẫn cài đặt (Thân thiện với người mới)
 
-如果你只想“能用、稳定、不折腾”，优先按“推荐值”设置即可。
+Nếu bạn muốn một cấu hình ổn định với ít tinh chỉnh, hãy làm theo các giá trị "Khuyến nghị".
 
-### 通用设置
+### Cài đặt chung
 
-| 设置项 | 这是做什么的（通俗） | 推荐值 | 什么时候改 |
+| Cài đặt | Chức năng (đơn giản) | Khuyến nghị | Khi nào nên thay đổi |
 | --- | --- | --- | --- |
-| 显示语言 | 改界面文字语言 | 你最熟悉的语言 | 只在看不懂时改 |
-| 应用主题 | 改亮色/暗色外观 | 跟随系统 | 长时间夜间使用可改深色 |
-| 窗口关闭行为 | 点关闭按钮后的动作 | 每次询问 | 想后台常驻选“最小化到托盘” |
-| Antigravity IDE 自动刷新配额 | 后台定时更新 Antigravity IDE 配额 | 5~10 分钟 | 账号多、想更实时可改 2 分钟 |
-| Codex 自动刷新配额 | 后台定时更新 Codex 配额 | 5~10 分钟 | 同上 |
-| GitHub Copilot 自动刷新配额 | 后台定时更新 GitHub Copilot 配额 | 5~10 分钟 | 同上 |
-| Windsurf 自动刷新配额 | 后台定时更新 Windsurf 配额 | 5~10 分钟 | 同上 |
-| Kiro 自动刷新配额 | 后台定时更新 Kiro 配额 | 5~10 分钟 | 同上 |
-| Cursor 自动刷新配额 | 后台定时更新 Cursor 配额 | 5~10 分钟 | 同上 |
-| Grok CLI 自动刷新配额 | 后台定时刷新 token 并更新配额 | 5~10 分钟 | 同上 |
-| CodeBuddy 自动刷新配额 | 后台定时更新 CodeBuddy 配额 | 5~10 分钟 | 同上 |
-| CodeBuddy CN 自动刷新配额 | 后台定时更新 CodeBuddy CN 配额 | 5~10 分钟 | 同上 |
-| Qoder 自动刷新配额 | 后台定时更新 Qoder 配额 | 5~10 分钟 | 同上 |
-| Trae 自动刷新配额 | 后台定时更新 Trae 套件账号配额 | 5~10 分钟 | 同上 |
-| Zed 自动刷新配额 | 后台定时更新 Zed 配额 | 5~10 分钟 | 同上 |
-| 数据目录 | 存账号与配置文件的位置 | 默认即可 | 仅用于排查、备份 |
-| Antigravity IDE/Codex/VS Code/Windsurf/Kiro/Cursor/Grok CLI/CodeBuddy/CodeBuddy CN/Qoder/Trae/Zed/OpenCode 启动路径 | 指定应用可执行文件位置 | 留空（自动检测） | 自动检测失败、或你装在自定义路径时 |
-| 切换 Codex 时自动重启 OpenCode | 切换 Codex 后自动同步 OpenCode 账号信息 | 使用 OpenCode 就开启；不用就关闭 | 频繁切号且需要 OpenCode 同步时开启 |
+| Ngôn ngữ hiển thị | Thay đổi ngôn ngữ giao diện | Ngôn ngữ bản địa/quen thuộc của bạn | Chỉ khi ngôn ngữ hiện tại khó đọc |
+| Giao diện (Theme) | Chế độ sáng/tối | Theo hệ thống | Dùng chế độ tối cho các phiên làm việc đêm dài |
+| Hành vi đóng cửa sổ | Điều gì xảy ra khi nhấn đóng | Hỏi mỗi lần | Chọn "Thu nhỏ vào khay" nếu muốn chạy nền |
+| Tự động làm mới Antigravity IDE | Định kỳ cập nhật hạn mức Antigravity IDE | 5-10 phút | Dùng 2 phút nếu cần cập nhật gần thời gian thực |
+| Tự động làm mới Codex | Định kỳ cập nhật hạn mức Codex | 5-10 phút | Tương tự như trên |
+| Tự động làm mới GitHub Copilot | Định kỳ cập nhật hạn mức GitHub Copilot | 5-10 phút | Tương tự như trên |
+| Tự động làm mới Windsurf | Định kỳ cập nhật hạn mức Windsurf | 5-10 phút | Tương tự như trên |
+| Tự động làm mới Kiro | Định kỳ cập nhật hạn mức Kiro | 5-10 phút | Tương tự như trên |
+| Tự động làm mới Cursor | Định kỳ cập nhật hạn mức Cursor | 5-10 phút | Tương tự như trên |
+| Tự động làm mới Grok CLI | Định kỳ làm mới token và cập nhật hạn mức | 5-10 phút | Tương tự như trên |
+| Tự động làm mới CodeBuddy | Định kỳ cập nhật hạn mức CodeBuddy | 5-10 phút | Tương tự như trên |
+| Tự động làm mới CodeBuddy CN | Định kỳ cập nhật hạn mức CodeBuddy CN | 5-10 phút | Tương tự như trên |
+| Tự động làm mới Qoder | Định kỳ cập nhật hạn mức Qoder | 5-10 phút | Tương tự như trên |
+| Tự động làm mới Trae | Định kỳ cập nhật hạn mức tài khoản bộ Trae | 5-10 phút | Tương tự như trên |
+| Tự động làm mới Zed | Định kỳ cập nhật hạn mức Zed | 5-10 phút | Tương tự như trên |
+| Thư mục dữ liệu | Nơi lưu các tệp tài khoản/cấu hình | Giữ mặc định | Chỉ để khắc phục sự cố hoặc sao lưu |
+| Đường dẫn ứng dụng Antigravity IDE/Codex/VS Code/Windsurf/Kiro/Cursor/Grok CLI/CodeBuddy/CodeBuddy CN/Qoder/Trae/Zed/OpenCode | Đặt thủ công đường dẫn tệp thực thi | Để trống (tự động phát hiện) | Chỉ thay đổi nếu tự động phát hiện thất bại hoặc bạn dùng đường dẫn cài đặt tùy chỉnh |
+| Tự động khởi động lại OpenCode khi chuyển Codex | Đồng bộ xác thực OpenCode sau khi chuyển Codex | BẬT nếu bạn dùng OpenCode; nếu không thì TẮT | Bật khi thường xuyên chuyển Codex cùng OpenCode |
 
-补充说明：
-- 自动刷新间隔越小，请求越频繁；若你更关注稳定，间隔可适当拉大。
-- 当启用“配额重置唤醒”相关任务时，部分刷新间隔会有最小值限制（界面会提示）。
+Ghi chú:
+- Khoảng thời gian làm mới nhỏ hơn đồng nghĩa với việc gửi yêu cầu thường xuyên hơn.
+- Nếu bật tác vụ đánh thức đặt lại hạn mức, một số giới hạn làm mới tối thiểu có thể được áp dụng (giao diện sẽ hiển thị gợi ý).
 
-### 网络服务设置
+### Cài đặt mạng
 
-| 设置项 | 这是做什么的（通俗） | 推荐值 | 风险/注意点 |
+| Cài đặt | Chức năng (đơn giản) | Khuyến nghị | Rủi ro / Ghi chú |
 | --- | --- | --- | --- |
-| WebSocket 服务 | 给本机插件/客户端实时通信用 | 不用插件联动就关闭 | 开启后仍是本机 `127.0.0.1` 访问 |
-| 首选端口 | WebSocket 监听端口 | 默认 `19528` | 若端口冲突可改，保存后需重启应用 |
-| 当前运行端口 | 实际已使用端口 | 只读查看 | 配置端口被占用时会自动回退到其它端口 |
+| Dịch vụ WebSocket | Tích hợp cục bộ theo thời gian thực cho plugin/client | TẮT nếu không cần | Vẫn chỉ chạy cục bộ (`127.0.0.1`) khi được bật |
+| Cổng ưu tiên | Cổng lắng nghe của WebSocket | Mặc định `19528` | Chỉ thay đổi khi có xung đột; cần khởi động lại sau khi lưu |
+| Cổng đang chạy hiện tại | Cổng thực tế đang hoạt động | Thông tin chỉ đọc | Có thể khác nếu cổng ưu tiên đang bị chiếm |
 
-### 三套推荐配置（直接抄）
+### 3 cấu hình sẵn dùng
 
-1. **稳定省心**：自动刷新 10 分钟 + WebSocket 关闭（不用插件时）+ 路径保持默认。  
-2. **高频切号**：自动刷新 2~5 分钟 + 需要联动时开启 WebSocket + OpenCode 联动开启。  
-3. **安全优先**：WebSocket 关闭 + 不共享用户目录 + 定期清理不再使用的账号。  
+1. **Mặc định ổn định**: làm mới 10 phút, WebSocket TẮT (nếu không có plugin), giữ đường dẫn mặc định.
+2. **Chuyển đổi thường xuyên**: làm mới 2-5 phút, BẬT WebSocket nếu cần, BẬT đồng bộ OpenCode.
+3. **Ưu tiên bảo mật**: TẮT WebSocket, không chia sẻ thư mục người dùng, thường xuyên xóa các tài khoản không dùng.
 
 ---
 
-## 安装指南 (Installation)
 
-### 选项 A: 手动下载 (推荐)
 
-前往 [GitHub Releases](https://github.com/jlcodes99/cockpit-tools/releases) 下载对应系统的安装包：
+---
+
+## Hướng dẫn cài đặt
+
+### Lựa chọn A: Tải xuống thủ công (Khuyến nghị)
+
+Truy cập [GitHub Releases](https://github.com/jlcodes99/cockpit-tools/releases) để tải gói cho hệ thống của bạn:
 
 *   **macOS**: `.dmg` (Apple Silicon & Intel)
-*   **Windows**: `.msi` (推荐) 或 `.exe`
-*   **Linux**: `.deb` (Debian/Ubuntu)、`.rpm` 或 `.AppImage` (通用)
+*   **Windows**: `.msi` (Khuyến nghị) hoặc `.exe`
+*   **Linux**: `.deb` (Debian/Ubuntu), `.rpm`, hoặc `.AppImage` (Đa năng)
 
-### 选项 B: Homebrew 安装 (macOS)
+### Lựa chọn B: Cài đặt bằng Homebrew (macOS)
 
-> 需要先安装 Homebrew。
+> Cần có Homebrew.
 
 ```bash
 brew tap jlcodes99/cockpit-tools https://github.com/jlcodes99/cockpit-tools
 brew install --cask cockpit-tools
 ```
 
-如果遇到 macOS “应用已损坏”或无法打开，也可以使用 `--no-quarantine` 安装：
+Nếu bạn gặp cảnh báo "App is damaged" của macOS, bạn cũng có thể cài đặt với `--no-quarantine`:
 
 ```bash
 brew install --cask --no-quarantine cockpit-tools
 ```
 
-如果提示已存在应用（例如：`already an App at '/Applications/Cockpit Tools.app'`），请先删除旧版本再安装：
+Nếu Homebrew báo rằng ứng dụng đã tồn tại (ví dụ `already an App at '/Applications/Cockpit Tools.app'`), hãy xóa ứng dụng cũ và cài lại:
 
 ```bash
 rm -rf "/Applications/Cockpit Tools.app"
 brew install --cask cockpit-tools
 ```
 
-或者直接强制覆盖安装：
+Hoặc buộc ghi đè ứng dụng hiện có:
 
 ```bash
 brew install --cask --force cockpit-tools
 ```
 
-### 🛠️ 常见问题排查 (Troubleshooting)
+### 🛠️ Khắc phục sự cố
 
-#### macOS 提示“应用已损坏，无法打开”？
-由于 macOS 的安全机制，非 App Store 下载的应用可能会触发此提示。当前开源发布流程尚未接入 Apple Developer ID 签名和公证，因此部分系统版本会显示更严格的 Gatekeeper 提示。您可以按照以下步骤快速修复：
+#### macOS báo "App is damaged and can't be opened"?
+Do cơ chế bảo mật của macOS, các ứng dụng không tải từ App Store có thể kích hoạt cảnh báo này. Quy trình phát hành mã nguồn mở hiện tại chưa sử dụng chữ ký Apple Developer ID hoặc công chứng (notarization), nên một số phiên bản macOS có thể hiển thị cảnh báo Gatekeeper nghiêm ngặt hơn. Bạn có thể khắc phục nhanh bằng các bước sau:
 
-1.  **命令行修复** (推荐):
-    打开终端，执行以下命令：
+1.  **Sửa bằng dòng lệnh** (Khuyến nghị):
+    Mở Terminal và chạy lệnh sau:
     ```bash
     sudo xattr -rd com.apple.quarantine "/Applications/Cockpit Tools.app"
     ```
-    > **注意**: 如果您修改了应用名称，请在命令中相应调整路径。
+    > **Lưu ý**: Nếu bạn đã đổi tên ứng dụng, vui lòng điều chỉnh đường dẫn trong lệnh cho phù hợp.
 
-2.  **或者**: 在“系统设置” -> “隐私与安全性”中点击“仍要打开”。
+2.  **Hoặc**: Vào "System Settings" -> "Privacy & Security" và nhấn "Open Anyway".
 
 ---
 
-## 开发与构建
+## Phát triển & Xây dựng
 
-### 前置要求
+### Yêu cầu tiên quyết
 
 - Node.js v18+
 - npm v9+
-- Rust（Tauri 运行时）
+- Rust (thời gian chạy Tauri)
 
-### 安装依赖
+### Cài đặt phụ thuộc
 
 ```bash
 npm install
 ```
 
-### 开发模式
+### Chế độ phát triển
 
 ```bash
 npm run tauri dev
 ```
 
-### 构建产物
+### Xây dựng
 
 ```bash
 npm run tauri build
@@ -423,68 +426,62 @@ npm run tauri build
 
 ---
 
-## Star History
+## Lịch sử Star
 
 [![Star History Chart](https://api.star-history.com/svg?repos=jlcodes99/cockpit-tools&type=Date)](https://star-history.com/#jlcodes99/cockpit-tools&Date)
 
 ---
 
-## 💬 交流群
+## Cộng đồng
 
-QQ 交流群、微信群或新建的 Telegram 畅聊群都可以加入。
-
-新建 Telegram 畅聊群：[点击加入](https://t.me/+Y8gMv4SlZUU2MWY1)
-
-| QQ 群 | 微信（个人） |
-| :---: | :---: |
-| <img src="docs/images/qq_group_20260404_183718.png" width="200" /> | <img src="docs/images/wechat_info.jpg" width="200" /> |
+Nhóm chat Telegram mới tạo: [Tham gia nhóm](https://t.me/+Y8gMv4SlZUU2MWY1)
 
 ---
 
-## ☕ 赞助项目
+## Tài trợ
 
-如果不介意，请 [☕ 赞赏支持一下](docs/DONATE.md)
+Nếu bạn thấy dự án này hữu ích, hãy cân nhắc ủng hộ tại đây: [☕ Ủng hộ](docs/DONATE.en.md)
 
-您的每一份支持都是对开源项目最大的鼓励！无论金额大小，都代表着您对这个项目的认可。
-
----
-
-## 致谢
-
-- Antigravity 账号切号逻辑参考：[Antigravity-Manager](https://github.com/lbjlaq/Antigravity-Manager)
-- Codex API 服务集成 CLIProxyAPI，Responses WebSocket 状态安全、canonical token accounting v2、Multi-Agent V2 兼容以及 Grok CLI 账号与 OAuth 实现方向亦参考其开源实现：[router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI)（MIT）
-- Grok 图标造型参考：[LobeHub/lobe-icons](https://github.com/lobehub/lobe-icons)（MIT）
-- Grok CLI 任务用量查询与兼容解析方向参考：[junhoyeo/tokscale](https://github.com/junhoyeo/tokscale)（MIT）
-- Grok CLI 第三方 BYOK 与 custom model 配置格式对照上游实现及文档：[xai-org/grok-build](https://github.com/xai-org/grok-build)
-- Codex API 服务协议兼容方向参考：[codex-proxy](https://github.com/icebear0828/codex-proxy)
-- Codex Agent Identity 导入、动态签名、task 失效恢复，以及 Responses namespace 分流、加密内容恢复、工具输出协议转换与模型兼容方向参考：[sub2api](https://github.com/Wei-Shaw/sub2api)
-- Codex Agent Identity runtime 注册协议与 Ed25519 密钥格式参考官方实现：[openai/codex](https://github.com/openai/codex)（Apache-2.0）
-- Codex、Claude CLI 与 Claude Desktop Gateway 第三方供应商预设和模型映射方向参考：[CC Switch](https://github.com/farion1231/cc-switch)
-- Codex 模型目录与前端模型显示思路参考：[CodexPlusPlus](https://github.com/BigPizzaV3/CodexPlusPlus)
-- Claude 可选登录 helper 运行时基于：[Electron](https://github.com/electron/electron)
-- 感谢 [@longwQaQ](https://github.com/longwQaQ) 贡献 Codex 模型供应商 Responses WebSocket 配置能力（[#1512](https://github.com/jlcodes99/cockpit-tools/pull/1512)）。
-- 感谢 [@sqmw](https://github.com/sqmw) 在 Trae CN 账号支持方向上的贡献（OAuth/本机导入、pay v2 配额与速通展示、CN 产品类型等实现思路），已整合进统一 Trae 套件（[#1281](https://github.com/jlcodes99/cockpit-tools/pull/1281)）。
-
-感谢项目作者的开源贡献！如果这些项目对你有帮助，也请给他们点个 ⭐ Star 支持一下！
+Mỗi sự ủng hộ đều giúp duy trì việc phát triển mã nguồn mở. Xin cảm ơn!
 
 ---
 
-## 许可证
+## Lời cảm ơn
 
-本项目默认采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 许可协议（署名-非商业性使用-相同方式共享）。
+- Logic chuyển tài khoản Antigravity tham khảo: [Antigravity-Manager](https://github.com/lbjlaq/Antigravity-Manager)
+- Dịch vụ Codex API tích hợp CLIProxyAPI; sự an toàn trạng thái Responses WebSocket, kế toán token chuẩn v2, khả năng tương thích Multi-Agent V2, cùng cách xử lý tài khoản mã nguồn mở và OAuth của nó cũng góp phần định hình Cockpit và triển khai Grok CLI: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) (MIT)
+- Hình dạng biểu tượng Grok tham khảo: [LobeHub/lobe-icons](https://github.com/lobehub/lobe-icons) (MIT)
+- Định hướng truy vấn mức sử dụng theo tác vụ của Grok CLI và phân tích tương thích tham khảo: [junhoyeo/tokscale](https://github.com/junhoyeo/tokscale) (MIT)
+- Định dạng BYOK bên thứ ba và cấu hình mô hình tùy chỉnh của Grok CLI tuân theo triển khai và tài liệu gốc: [xai-org/grok-build](https://github.com/xai-org/grok-build)
+- Định hướng tương thích giao thức của dịch vụ Codex API tham khảo: [codex-proxy](https://github.com/icebear0828/codex-proxy)
+- Việc nhập Codex Agent Identity, ký động, khôi phục tác vụ, định tuyến namespace Responses, khôi phục nội dung được mã hóa, chuyển đổi giao thức đầu ra công cụ và khả năng tương thích mô hình tham khảo: [sub2api](https://github.com/Wei-Shaw/sub2api)
+- Giao thức đăng ký thời gian chạy Codex Agent Identity và định dạng khóa Ed25519 tham khảo triển khai chính thức: [openai/codex](https://github.com/openai/codex) (Apache-2.0)
+- Các preset nhà cung cấp bên thứ ba và định hướng ánh xạ mô hình cho Codex, Claude CLI và Claude Desktop Gateway tham khảo: [CC Switch](https://github.com/farion1231/cc-switch)
+- Danh mục mô hình Codex và ý tưởng hiển thị mô hình phía frontend tham khảo: [CodexPlusPlus](https://github.com/BigPizzaV3/CodexPlusPlus)
+- Thời gian chạy trợ giúp đăng nhập tùy chọn của Claude dựa trên: [Electron](https://github.com/electron/electron)
+- Cảm ơn [@longwQaQ](https://github.com/longwQaQ) đã đóng góp cấu hình Codex Responses WebSocket theo từng nhà cung cấp ([#1512](https://github.com/jlcodes99/cockpit-tools/pull/1512)).
+- Cảm ơn [@sqmw](https://github.com/sqmw) về công việc hỗ trợ tài khoản Trae CN (định hướng OAuth/nhập cục bộ, hiển thị hạn mức pay v2 và fast-request, các loại sản phẩm CN), đã được tích hợp vào bộ Trae hợp nhất ([#1281](https://github.com/jlcodes99/cockpit-tools/pull/1281)).
 
-- 允许：个人学习、研究、非商业场景下的使用与修改（需保留署名并遵循同协议分享要求）。
-- 不允许：任何未获授权的商业使用（含企业内部商业目的、对外商业服务、付费产品集成、二次分发售卖等）。
-- 商业授权：如需商业使用，请联系作者获取单独书面商业授权与报价。
+Cảm ơn tác giả các dự án vì những đóng góp mã nguồn mở của họ! Nếu những dự án này đã giúp ích cho bạn, hãy tặng họ một ⭐ Star để thể hiện sự ủng hộ!
 
 ---
 
-## 免责声明
+## Giấy phép
 
-本项目仅供个人学习和研究使用。使用本项目即表示您同意：
+Dự án này được cấp phép theo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-- 未获得作者书面商业授权前，不将本项目用于任何商业用途
-- 承担使用本项目的所有风险和责任
-- 遵守相关服务条款和法律法规
+- Được phép: học tập cá nhân, nghiên cứu và sử dụng/sửa đổi phi thương mại (kèm nghĩa vụ ghi công và chia sẻ tương tự).
+- Không được phép: bất kỳ hình thức sử dụng thương mại nào mà không được ủy quyền (bao gồm vận hành thương mại nội bộ, dịch vụ trả phí bên ngoài, tích hợp sản phẩm trả phí, hoặc bán lại/phân phối lại nhằm mục đích lợi nhuận).
+- Giấy phép thương mại: liên hệ tác giả để có giấy phép thương mại bằng văn bản riêng và bảng giá.
 
-项目作者对因使用本项目而产生的任何直接或间接损失不承担责任。
+---
+
+## Tuyên bố miễn trừ trách nhiệm
+
+Dự án này chỉ dành cho mục đích học tập và nghiên cứu cá nhân. Bằng việc sử dụng dự án này, bạn đồng ý:
+
+- Không sử dụng dự án này cho bất kỳ mục đích thương mại nào khi chưa có sự ủy quyền bằng văn bản trước từ tác giả
+- Chịu mọi rủi ro và trách nhiệm khi sử dụng dự án này
+- Tuân thủ các điều khoản dịch vụ cũng như luật pháp và quy định liên quan
+
+Tác giả dự án không chịu trách nhiệm về bất kỳ tổn thất trực tiếp hoặc gián tiếp nào phát sinh từ việc sử dụng dự án này.
