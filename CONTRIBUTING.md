@@ -1,102 +1,104 @@
-# Contributing to Cockpit Tools
+# Đóng góp cho Cockpit Tools
 
-Thank you for your interest in contributing to Cockpit Tools! This project aims to be the universal manager for AI IDEs, and we welcome contributions of all kinds.
+Tiếng Việt · [English](CONTRIBUTING.en.md)
 
-## 🚀 Getting Started
+Cảm ơn bạn đã quan tâm đến việc đóng góp cho Cockpit Tools! Dự án này hướng tới việc trở thành công cụ quản lý đa năng cho các AI IDE, và chúng tôi hoan nghênh mọi hình thức đóng góp.
 
-1.  **Fork** the repository on GitHub.
-2.  **Clone** your fork locally:
+## 🚀 Bắt đầu
+
+1.  **Fork** repository trên GitHub.
+2.  **Clone** bản fork của bạn về máy:
     ```bash
     git clone https://github.com/YOUR_USERNAME/cockpit-tools.git
     ```
-3.  **Create a branch** for your feature or bug fix:
+3.  **Tạo một nhánh** cho tính năng hoặc bản sửa lỗi của bạn:
     ```bash
     git checkout -b feature/my-cool-feature
     ```
 
-## 🛠️ Project Structure
+## 🛠️ Cấu trúc dự án
 
-This project is a Cargo Workspace:
-- `crates/cockpit-core`: Shared business logic (Library).
-- `src-tauri`: The GUI application (Tauri + React).
-- `crates/cockpit-cli`: The command-line interface.
+Dự án này là một Cargo Workspace:
+- `crates/cockpit-core`: Logic nghiệp vụ dùng chung (thư viện).
+- `src-tauri`: Ứng dụng giao diện (Tauri + React).
+- `crates/cockpit-cli`: Giao diện dòng lệnh.
 
-## 📝 Coding Standards
+## 📝 Quy chuẩn viết mã
 
-- **Rust:** Follow standard Rust idioms. Run `cargo fmt` before committing.
-- **Frontend:** We use React 19 and Tailwind CSS. Use functional components and hooks.
-- **Commits:** Use clear, descriptive commit messages.
+- **Rust:** Tuân theo các idiom Rust chuẩn. Chạy `cargo fmt` trước khi commit.
+- **Frontend:** Chúng tôi dùng React 19 và Tailwind CSS. Sử dụng functional component và hooks.
+- **Commit:** Dùng thông điệp commit rõ ràng, mô tả đúng nội dung.
 
-## 🧪 Testing
+## 🧪 Kiểm thử
 
-- **GUI:** `npm run tauri dev`
+- **Giao diện (GUI):** `npm run tauri dev`
 - **CLI:** `cargo run --package cockpit-cli -- <commands>`
 - **Core:** `cargo test --package cockpit-core`
 
-## 📬 Submitting a Pull Request
+## 📬 Gửi Pull Request
 
-1.  Push your changes to your fork.
-2.  Open a Pull Request against the `main` branch.
-3.  Provide a clear description of the changes and link any related issues.
-4.  Be prepared to iterate based on feedback!
+1.  Push các thay đổi lên bản fork của bạn.
+2.  Mở Pull Request nhắm vào nhánh `main`.
+3.  Cung cấp mô tả rõ ràng về các thay đổi và liên kết tới issue liên quan (nếu có).
+4.  Sẵn sàng chỉnh sửa dựa trên phản hồi!
 
-## 📜 Code of Conduct
+## 📜 Quy tắc ứng xử
 
-Please be respectful and professional in all interactions. We follow the [Contributor Covenant](https://www.contributor-covenant.org/).
+Vui lòng tôn trọng và giữ thái độ chuyên nghiệp trong mọi tương tác. Chúng tôi tuân theo [Contributor Covenant](https://www.contributor-covenant.org/).
 
 ---
 
-## 📋 Additional Project Specifications
+## 📋 Thông số kỹ thuật bổ sung
 
-### TypeScript Configuration
+### Cấu hình TypeScript
 
-- **Strict mode** enabled (`strict: true`)
-- **No unused locals** (`noUnusedLocals: true`)
-- **No unused parameters** (`noUnusedParameters: true`)
-- **No fallthrough cases in switch** (`noFallthroughCasesInSwitch: true`)
+- Bật **strict mode** (`strict: true`)
+- **Không cho biến cục bộ không dùng** (`noUnusedLocals: true`)
+- **Không cho tham số không dùng** (`noUnusedParameters: true`)
+- **Không cho case rơi xuyên trong switch** (`noFallthroughCasesInSwitch: true`)
 - Target: ES2020, JSX: react-jsx
 
-### Build & Development
+### Xây dựng & Phát triển
 
-| Command | Description |
+| Lệnh | Mô tả |
 |---------|-------------|
-| `npm run tauri dev` | Start development server (port 1420) |
-| `npm run typecheck` | Run TypeScript type checking (auto-runs before build) |
-| `npm run build` | Build frontend (syncs version + typecheck + vite build) |
-| `npm run sync-version` | Sync `package.json` version to Tauri config |
-| `npm run release:preflight` | Run full release pre-check (locales + typecheck + build + cargo check) |
+| `npm run tauri dev` | Khởi động máy chủ phát triển (cổng 1420) |
+| `npm run typecheck` | Chạy kiểm tra kiểu TypeScript (tự chạy trước khi build) |
+| `npm run build` | Build frontend (đồng bộ version + typecheck + vite build) |
+| `npm run sync-version` | Đồng bộ version `package.json` sang cấu hình Tauri |
+| `npm run release:preflight` | Chạy kiểm tra tiền phát hành đầy đủ (locales + typecheck + build + cargo check) |
 
-### State Management & i18n
+### Quản lý trạng thái & i18n
 
-- **State management:** Zustand
-- **Internationalization:** i18next + react-i18next (supports 18 languages)
-- **UI framework:** Tailwind CSS + DaisyUI
+- **Quản lý trạng thái:** Zustand
+- **Đa ngôn ngữ:** i18next + react-i18next (hỗ trợ 18 ngôn ngữ)
+- **Framework giao diện:** Tailwind CSS + DaisyUI
 
-### Release Process Summary
+### Tóm tắt quy trình phát hành
 
-1. Update version in `package.json` + CHANGELOG (Chinese & English)
-2. Run `npm run sync-version` → `npm run release:preflight`
-3. Commit → Tag (e.g., `v0.22.20`) → Push branch and tag
-4. CI auto-builds macOS (universal) + Windows + Linux → Generates SHA256 → Updates Homebrew Cask
+1. Cập nhật version trong `package.json` + CHANGELOG (tiếng Trung & tiếng Anh)
+2. Chạy `npm run sync-version` → `npm run release:preflight`
+3. Commit → Gắn tag (ví dụ `v0.22.20`) → Push nhánh và tag
+4. CI tự động build macOS (universal) + Windows + Linux → Tạo SHA256 → Cập nhật Homebrew Cask
 
-### Release Targets
+### Nền tảng phát hành
 
-- **macOS, Windows, and Linux**
-- macOS recommended: `universal.dmg` (compatible with both Intel and Apple Silicon)
-- Linux packages: `.AppImage`, `.deb`, and `.rpm`
-- Each release includes `SHA256SUMS.txt` for integrity verification
+- **macOS, Windows và Linux**
+- macOS khuyến nghị: `universal.dmg` (tương thích cả Intel và Apple Silicon)
+- Gói Linux: `.AppImage`, `.deb` và `.rpm`
+- Mỗi bản phát hành kèm `SHA256SUMS.txt` để xác minh tính toàn vẹn
 
-### Branch Strategy
+### Chiến lược nhánh
 
-- **Main branch:** `main`
-- **PR target:** `main`
-- **Release tag format:** `v<major>.<minor>.<patch>`
+- **Nhánh chính:** `main`
+- **Đích của PR:** `main`
+- **Định dạng tag phát hành:** `v<major>.<minor>.<patch>`
 
-### Related Specification Files
+### Các tệp thông số liên quan
 
-| File | Content |
+| Tệp | Nội dung |
 |------|---------|
-| `docs/release-process.md` | Detailed release process documentation |
-| `tsconfig.json` | TypeScript strict compilation rules |
-| `.github/workflows/release.yml` | CI/CD release automation |
-| `SECURITY.md` | Security policy |
+| `docs/release-process.md` | Tài liệu chi tiết quy trình phát hành |
+| `tsconfig.json` | Quy tắc biên dịch nghiêm ngặt của TypeScript |
+| `.github/workflows/release.yml` | Tự động hóa phát hành CI/CD |
+| `SECURITY.md` | Chính sách bảo mật |
