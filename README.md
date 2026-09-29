@@ -1,5 +1,9 @@
 # Cockpit Tools
 
+> **Android (đang phát triển):** Repo đã có cấu hình khởi tạo/build ứng dụng Tauri cho
+> Android và tài liệu phân tích khả năng tương thích. Xem [hướng dẫn Android](docs/android.md)
+> để chạy trên thiết bị, build APK và hiểu các tính năng cần desktop companion.
+
 Tiếng Việt · [简体中文](README.zh-CN.md) · [English](README.en.md) · [Portuguese (BR)](README.pt-br.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/jlcodes99/cockpit-tools?style=flat&color=gold)](https://github.com/jlcodes99/cockpit-tools)

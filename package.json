@@ -13,6 +13,9 @@
     "preview": "vite preview",
     "pretauri:dev": "npm run typecheck",
     "tauri:dev": "node scripts/tauri-dev.cjs",
+    "android:init": "tauri android init",
+    "android:dev": "tauri android dev",
+    "android:build": "tauri android build --apk",
     "pretauri": "npm run typecheck",
     "tauri": "node scripts/tauri.cjs",
     "sync-version": "node scripts/sync-version.js"
