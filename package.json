@@ -15,7 +15,9 @@
     "tauri:dev": "node scripts/tauri-dev.cjs",
     "android:init": "tauri android init",
     "android:dev": "tauri android dev",
-    "android:build": "tauri android build --apk",
+    "android:build": "tauri android build --apk true",
+    "docker:build:desktop": "bash scripts/docker-build.sh desktop",
+    "docker:build:android": "bash scripts/docker-build.sh android",
     "pretauri": "npm run typecheck",
     "tauri": "node scripts/tauri.cjs",
     "sync-version": "node scripts/sync-version.js"
