@@ -10,6 +10,8 @@ RUN for attempt in 1 2 3 4 5; do \
     done; \
     exit 1
 
+FROM golang:1.26-bookworm AS go-toolchain
+
 FROM cimg/android:2025.03-node
 
 USER root
@@ -19,7 +21,6 @@ RUN apt-get update \
         build-essential \
         curl \
         file \
-        golang \
         libayatana-appindicator3-dev \
         libgtk-3-dev \
         libnm-dev \
@@ -34,12 +35,13 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 USER circleci
+COPY --from=go-toolchain /usr/local/go /usr/local/go
 COPY --from=rust-toolchain /usr/local/cargo /home/circleci/.cargo
 COPY --from=rust-toolchain /usr/local/rustup /home/circleci/.rustup
 COPY --chown=circleci:circleci docker/cargo-config.toml /home/circleci/.cargo/config.toml
 RUN sudo chown -R circleci:circleci /home/circleci/.cargo /home/circleci/.rustup
 
-ENV PATH="/home/circleci/.cargo/bin:${PATH}" \
+ENV PATH="/usr/local/go/bin:/home/circleci/.cargo/bin:${PATH}" \
     RUSTUP_HOME="/home/circleci/.rustup" \
     CARGO_HOME="/home/circleci/.cargo"
 ENV CARGO_NET_RETRY=10 \

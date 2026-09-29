@@ -4,6 +4,9 @@ Docker image của repo chứa Node.js, Rust stable, Go, Linux desktop libraries
 Android SDK/NDK. Docker Compose giữ cache Cargo và Gradle trong named volumes để
 các lần build sau không phải tải lại toàn bộ dependency.
 
+Rust và Go được pin qua official images (`rust:1.98-bookworm` và
+`golang:1.26-bookworm`) để fresh build không phụ thuộc các phiên bản cũ trong apt.
+
 Rust được lấy từ official Rust image thay vì chạy installer trong container. Android
 targets dùng mirror `rsproxy.cn` và retry riêng, tránh phụ thuộc vào bước bootstrap
 `sh.rustup.rs` vốn dễ bị treo khi endpoint mặc định chậm.
