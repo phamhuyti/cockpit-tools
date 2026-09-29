@@ -48,6 +48,7 @@ src-tauri/native/macos-native-menu/.build/
 # Rust
 target/
 **/*.rs.bk
+artifacts/
 docs/plugin-architecture-proposal.md
 .aitasks
 .qoder/

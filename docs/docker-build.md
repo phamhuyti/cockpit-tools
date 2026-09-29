@@ -14,7 +14,7 @@ targets dùng mirror `rsproxy.cn` và retry riêng, tránh phụ thuộc vào b�
 docker compose -f docker/docker-compose.yml run --rm build desktop
 ```
 
-Artifact nằm trong `src-tauri/target/release/bundle/`.
+Artifact được gom tại `artifacts/desktop/`.
 
 ## Build Android APK
 
@@ -22,7 +22,7 @@ Artifact nằm trong `src-tauri/target/release/bundle/`.
 docker compose -f docker/docker-compose.yml run --rm build android
 ```
 
-Artifact APK nằm trong `src-tauri/gen/android/app/build/outputs/apk/`.
+Artifact APK được gom tại `artifacts/android/`.
 
 Hai lệnh trên cũng có shortcut qua npm:
 
