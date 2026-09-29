@@ -4,6 +4,7 @@ services:
       context: ..
       dockerfile: docker/Dockerfile
     working_dir: /workspace
+    user: "0:0"
     volumes:
       - ..:/workspace
       - cargo-registry:/home/circleci/.cargo/registry

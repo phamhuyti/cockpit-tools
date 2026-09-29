@@ -1,3 +1,15 @@
+FROM rust:1.98-bookworm AS rust-toolchain
+
+ENV RUSTUP_DIST_SERVER=https://rsproxy.cn \
+    RUSTUP_UPDATE_ROOT=https://rsproxy.cn/rustup
+
+RUN for attempt in 1 2 3 4 5; do \
+      rustup target add aarch64-linux-android armv7-linux-androideabi && exit 0; \
+      echo "Rust Android target download failed (attempt ${attempt}), retrying..."; \
+      sleep 5; \
+    done; \
+    exit 1
+
 FROM cimg/android:2025.03-node
 
 USER root
@@ -22,10 +34,15 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 USER circleci
-ENV PATH="/home/circleci/.cargo/bin:${PATH}"
+COPY --from=rust-toolchain /usr/local/cargo /home/circleci/.cargo
+COPY --from=rust-toolchain /usr/local/rustup /home/circleci/.rustup
+RUN sudo chown -R circleci:circleci /home/circleci/.cargo /home/circleci/.rustup
 
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable \
-    && rustup target add aarch64-linux-android armv7-linux-androideabi
+ENV PATH="/home/circleci/.cargo/bin:${PATH}" \
+    RUSTUP_HOME="/home/circleci/.rustup" \
+    CARGO_HOME="/home/circleci/.cargo"
+ENV CARGO_NET_RETRY=10 \
+    RUSTUP_MAX_RETRIES=10
 
 WORKDIR /workspace
 
