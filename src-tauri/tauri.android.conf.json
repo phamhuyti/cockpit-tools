@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "identifier": "com.jlcodes.cockpittools",
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Cockpit Tools"
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": false,
+    "externalBin": []
+  }
+}
