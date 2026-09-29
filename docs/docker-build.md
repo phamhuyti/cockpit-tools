@@ -7,6 +7,8 @@ các lần build sau không phải tải lại toàn bộ dependency.
 Rust được lấy từ official Rust image thay vì chạy installer trong container. Android
 targets dùng mirror `rsproxy.cn` và retry riêng, tránh phụ thuộc vào bước bootstrap
 `sh.rustup.rs` vốn dễ bị treo khi endpoint mặc định chậm.
+Cargo cũng dùng sparse registry của `rsproxy.cn`, có retry và timeout để fresh build
+không bị treo ở bước cập nhật crates.io index.
 
 ## Build desktop Linux
 

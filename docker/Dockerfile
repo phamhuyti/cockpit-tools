@@ -36,6 +36,7 @@ RUN apt-get update \
 USER circleci
 COPY --from=rust-toolchain /usr/local/cargo /home/circleci/.cargo
 COPY --from=rust-toolchain /usr/local/rustup /home/circleci/.rustup
+COPY --chown=circleci:circleci docker/cargo-config.toml /home/circleci/.cargo/config.toml
 RUN sudo chown -R circleci:circleci /home/circleci/.cargo /home/circleci/.rustup
 
 ENV PATH="/home/circleci/.cargo/bin:${PATH}" \
