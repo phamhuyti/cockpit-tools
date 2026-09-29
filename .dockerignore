@@ -1,0 +1,9 @@
+.git
+.codex
+node_modules
+dist
+target
+src-tauri/gen
+src-tauri/target
+sidecars/cockpit-cliproxy/bin
+*.log

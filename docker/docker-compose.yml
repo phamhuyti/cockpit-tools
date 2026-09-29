@@ -1,0 +1,21 @@
+services:
+  build:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    working_dir: /workspace
+    user: "0:0"
+    volumes:
+      - ..:/workspace
+      - cargo-registry:/home/circleci/.cargo/registry
+      - cargo-git:/home/circleci/.cargo/git
+      - gradle-cache:/home/circleci/.gradle
+    environment:
+      ANDROID_HOME: /home/circleci/android-sdk
+      ANDROID_SDK_ROOT: /home/circleci/android-sdk
+    entrypoint: ["bash", "scripts/docker-build.sh"]
+
+volumes:
+  cargo-registry:
+  cargo-git:
+  gradle-cache:
